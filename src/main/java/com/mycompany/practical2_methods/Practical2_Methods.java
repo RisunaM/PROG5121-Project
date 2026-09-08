@@ -14,6 +14,10 @@ public class Practical2_Methods {
    public static int calculateSum(int number1, int number2){
    return number1 + number2;
    }
+   //Add the average method, hoping it works
+   public static int calculateAve(int number1, int number2){
+       return (number1 + number2) /2; //formula for average
+   }
    //This is our main method, this method is embedded/ comes with the project. 
     public static void main(String[] args) {
     //Ask user for first number using GUI
@@ -25,6 +29,10 @@ public class Practical2_Methods {
     
     int result = calculateSum(firstNum, secondNum);
     JOptionPane.showMessageDialog(null,"The answer is " + result);
+    // call the average result
+    int sum = calculateAve(firstNum, secondNum);
+    JOptionPane.showMessageDialog(null,"The average is " + sum);
+    
     }
 }
 //We cannot put anything outside this class for now
